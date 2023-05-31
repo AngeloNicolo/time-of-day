@@ -45,15 +45,18 @@
 	    <p>This pages shows how you can change the image and the color of the website by setting the hours to a certain time of the day that will corilate to the site.</p>
 	  <img id="my-pic" src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
      <footer>
-		<p><small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Angelo Nicolo Rights Reserved~
- 
-          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
-          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
-     </p>
+		
+	
+		<p><small>&copy; 2022-<span id="this-year"></span> by 
+			Angelo Nicolo , All Rights Reserved ~ 
+			<a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+			<a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+	   </p>
     </footer>
   </main>
  <script>
-
+	let d = new Date(); let thisYear = d.getFullYear();
+     document.getElementById("this-year").innerHTML = thisYear;
 /* 
 	Create a web page that uses JavaScript to determine the current hour, 
 	and presents a different image, custom message, and color based on 
